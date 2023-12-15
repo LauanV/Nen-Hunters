@@ -1,0 +1,391 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/*Site Geral*/
+
+.center{
+    display: flex;
+    max-width: 1100px;
+    padding: 0 2%;
+    margin: 0 auto;
+}
+
+body{
+    background-color: whitesmoke;
+    background-image: url(./Imagens-Site/Imagens-HomePage/fundo-site-hxh-desfocado.jpg);
+    background-size: cover;
+    background-blend-mode: darken;
+}
+
+
+a{
+    color: white;
+    text-decoration: none;
+}
+
+header img{
+    width: 120px;
+    height: 120px;
+}
+
+header{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background: linear-gradient(#FF8A00, #ff4a00);
+    height: 18vh;
+}
+
+#gon-cabecalho{
+    width: 320px;
+    height: 125px;
+    padding-right: 30px;
+}
+
+#nen-hunters-name{
+    width: 300px;
+    height: 125px;
+    margin: 0px 100px;
+}
+
+#logo-site{
+    width: 180px;
+    height: 120px;
+    padding-left: -30px;
+}
+
+.container{
+    padding: 20px 30px;
+    display: flex;
+    flex-direction: column;
+}
+
+ul{
+    margin-top: 10px;
+    display: flex;
+    justify-content: space-between;
+    list-style-type: none;
+    align-items: center;
+    padding:0px 16px;
+    background-color: green;
+    border-radius: 30px;
+    padding: 20px;
+    font-family: 'Rubik', Arial, Helvetica, sans-serif;
+    line-height: 5px;
+    color: gainsboro;
+}
+
+nav a:hover{
+    color: orangered;
+    transition: 0.3s;
+}
+
+section.container{
+    display: flex;
+    flex-direction: column;
+    font-family: 'sora' , Arial, Helvetica, sans-serif;
+}
+
+.topics{
+    background-color: #2E6624;
+    text-align: center;
+    border-radius: 20px;
+    color: gainsboro;
+    text-align: justify;
+    margin-bottom: 20px;
+}
+
+.topics h1{
+    background-color: #ff4a00;
+    text-shadow: 1px 1px 3px black;
+    color: gainsboro;
+    border-radius: 20px;
+    text-align: center;
+    margin: 15px 0px;
+    text-transform: uppercase;
+    height: 30px;
+}
+
+.topics p{
+    margin: 30px;
+}
+
+.topics h2{
+    text-align: center;
+    margin: 15px;
+}
+
+/*Personagens*/
+
+.container-chars {
+    display: flex;
+    justify-content: space-between;
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.content-chars {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-bottom: 20px;
+}
+
+.content-chars img{
+    margin: 0;
+}
+
+.text-img {
+    flex: 1;
+    max-width: 100%;
+    height: 100%;
+    padding: 0 20px;
+    /* margin-right: 20px; */
+}
+
+.text-img h5{
+    font-size: 0.95em;
+}
+
+.content-chars img {
+    display: flex;
+    max-width: 350px;
+    height: auto;
+    margin: 30px;
+}
+
+/*Notícias*/
+
+.news-container {
+    max-width: 100%;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.news-item {
+    display: flex;
+    margin-bottom: 20px;
+    border: 3px solid #ccc;
+    border-radius: 30px;
+    overflow: hidden;
+}
+
+.news-item img {
+    max-width: 500px;
+}
+
+.news-info {
+    padding: 15px;
+}
+
+.news-info h2{
+    color: orangered;
+}
+
+.news-info p{
+    padding: 30px 5px;
+}
+
+h2 {
+    margin-top: 0;
+}
+
+/*Arcos e Episódios*/
+
+.arcos {
+    text-align: center;
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.arcos img {
+    max-width: 500px;
+    height: auto;
+}
+
+.arcos h2 {
+    color: orangered;
+    margin-top: 20px;
+}
+
+.arcos p {
+    text-align: left;
+    margin-top: 10px;
+    font-size: larger;
+}
+
+/*Sistema de Nen*/
+
+.sistema-nen{
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-bottom: 20px;
+}
+
+.sistema-nen img{
+    max-width: 600px;
+    height: auto;
+    text-align: center;
+    max-width: auto;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.h3{
+    text-align: center;
+    width: 100%;
+    text-decoration: underline;
+}
+
+/*Galeria*/
+
+.container-galeria{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    gap: 2vw;
+    padding: 0 1vw;
+}
+
+.imagens-galeria{
+    width: 340px;
+    height: 250px;
+    border: 10px solid whitesmoke;
+    box-shadow: 5px 5px 5px #006;
+    flex-grow: 1;
+    margin: 30px 5px;
+}
+
+.imagens-galeria :hover{
+    transform: scale(1.4);
+    transition: 0.3s;
+}
+
+.imagens-galeria img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/*Rodapé*/
+
+footer{
+    display: flex;
+    justify-content: center;
+    background-color: green;
+    width: 100%;
+    bottom: 0;
+    color: gainsboro;
+    font-family: 'sora' , Arial, Helvetica, sans-serif;
+}
+
+footer img{
+    width: 40px;
+    height: 40px;
+}
+
+footer a{
+    margin: 30px;
+    text-align: center;
+}
+
+footer p{
+    margin-top: 2px;
+}
+
+footer a:hover{
+    color: orangered;
+    transition: 0.3s;
+}
+
+@media screen and (max-width: 768px){
+
+    .text-img p{
+        margin: 0;
+        font-size: 0.8em;
+    }
+
+    body{
+        width: 700px;
+        width: 100%;
+        flex-direction: column;
+    }
+    
+    header {
+        height: auto;
+        text-align: center;
+        width: 100%;
+    }
+
+    #gon-cabecalho{
+        width: 150px;
+        height: 110px;
+        padding: 0;
+    }
+    
+    #nen-hunters-name{
+        width: 150px;
+        height: 100px;
+        margin: 0;
+    }
+    
+    #logo-site{
+        width: 90px;
+        height: 90px;
+    }
+
+    .news-item{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .news-item img{
+        width: 100%;
+        height: 200px;
+    }
+
+    .news-info p{
+        margin: 0;
+    }
+
+    section.container{
+        width: 380px;
+        height: auto;
+    }
+
+    .arcos{
+        font-size: 0.9em;
+    }
+
+    body img{
+        width: 75%;
+    }
+
+    .sistema-nen p{
+        margin: 15px;
+    }
+
+    ul{
+        flex-wrap: wrap;
+        flex-direction: column;
+        height: 150px;
+    }
+
+    .text-img{
+        margin: 0;
+    }
+
+    .topics{
+        width: 355px;
+    }
+
+}
